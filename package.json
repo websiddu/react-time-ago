@@ -1,6 +1,7 @@
 {
-  "name": "react-time-ago",
+  "name": "@gsid/react-time-ago",
   "version": "7.2.1",
+  "private": false,
   "description": "Localized relative date/time formatting in React",
   "main": "index.cjs",
   "module": "index.js",
@@ -78,7 +79,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/catamphetamine/react-time-ago.git"
+    "url": "https://github.com/websiddu/react-time-ago"
   },
   "keywords": [
     "react",
