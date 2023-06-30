@@ -24,7 +24,7 @@ function ReactTimeAgo({
   round,
   minTimeLeft,
   tooltip = true,
-  component = Time,
+  component: Component,
   // `container` property name is deprecated,
   // use `wrapperComponent` property name instead.
   container,
@@ -50,6 +50,8 @@ function ReactTimeAgo({
   polyfill,
   ...rest
 }) {
+  if (!Component) Component = Time;
+
   // Get the list of preferred locales.
   const preferredLocales = useMemo(() => {
     // Convert `locale` to `locales`.
