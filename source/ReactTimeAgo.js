@@ -183,8 +183,7 @@ function ReactTimeAgo({
 ReactTimeAgo.propTypes = {
   // The `date` or `timestamp`.
   // E.g. `new Date()` or `1355972400000`.
-  date: PropTypes.oneOfType([PropTypes.instanceOf(Date), PropTypes.number])
-    .isRequired,
+  date: PropTypes.oneOfType([PropTypes.instanceOf(Date), PropTypes.number]),
 
   // Preferred locale.
   // Is 'en' by default.
@@ -225,12 +224,12 @@ ReactTimeAgo.propTypes = {
   // * tooltip: boolean — The `tooltip` property of `<ReactTimeAgo/>` component.
   // * children: string — The relative time label.
   // * All "unknown" properties that have been passed to `<ReactTimeAgo/>` are passed through to this component.
-  component: PropTypes.elementType.isRequired,
+  component: PropTypes.elementType,
 
   // Whether to use HTML `tooltip` attribute to show a verbose date tooltip.
   // Is `true` by default.
   // Can be set to `false` to disable the native HTML `tooltip`.
-  tooltip: PropTypes.bool.isRequired,
+  tooltip: PropTypes.bool,
 
   // Verbose date formatter.
   // By default it's `(date) => new Intl.DateTimeFormat(locale, {…}).format(date)`.
@@ -249,7 +248,7 @@ ReactTimeAgo.propTypes = {
     PropTypes.arrayOf(
       PropTypes.shape({
         threshold: PropTypes.number,
-        interval: PropTypes.number.isRequired,
+        interval: PropTypes.number,
       })
     ),
   ]),
