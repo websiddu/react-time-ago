@@ -24,7 +24,7 @@ function ReactTimeAgo({
   round,
   minTimeLeft,
   tooltip = true,
-  component: Component = Time,
+  component = Time,
   // `container` property name is deprecated,
   // use `wrapperComponent` property name instead.
   container,

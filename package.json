@@ -1,6 +1,6 @@
 {
   "name": "@gsid/react-time-ago",
-  "version": "7.2.1",
+  "version": "7.2.2",
   "private": false,
   "description": "Localized relative date/time formatting in React",
   "main": "index.cjs",
